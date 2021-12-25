@@ -7,6 +7,7 @@
   --color-red: #df3b3b;
   --color-green: #3bdf72;
   --color-gray: #b5bdc4;
+  --color-white: #ffffff;
 }
 html,
 body {
@@ -165,6 +166,48 @@ button.btn-logo {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
 }
+
+
+/* images */
+.image-banner {
+  object-fit: cover;
+}
+
+
+/* premiere */
+.premiere {
+  /* display: block; */
+  background-color: #dedfe0;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+
+}
+
+.image-banner {
+  width: 100px !important;
+  height: 50px !important;
+  border-radius: 8px;
+}
+
+.premiere-content .image {
+  border-radius: 8px;
+}
+
+.premiere-content {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.premiere-text {
+  width: 400px;
+}
+
+.premiere-text > p {
+  font-size: 18px;
+}
+
 
 /* Flex container */
 
