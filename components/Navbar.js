@@ -10,7 +10,7 @@ export default function Navbar() {
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo">КУЛЬТУРЫНЙ МОСТ</button>
+            <button className="btn-logo">КУЛЬТУРНЫЙ МОСТ</button>
           </Link>
         </li>
       </ul>

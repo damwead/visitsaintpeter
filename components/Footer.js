@@ -1,19 +1,7 @@
-import Link from 'next/link';
-import { useContext } from 'react';
-import { UserContext } from '../lib/context';
-
-export default function Navbar() {
-  // const { user, username } = useContext(UserContext)
-
+export default function Footer() {
   return (
-    <nav className='navbar'>
-      <ul>
-        <li>
-          <Link href="/">
-            <button className="btn-logo">КУЛЬТУРЫНЙ МОСТ</button>
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <footer>
+      <p class="footer-text"> &copy; АНО Культурный Мост 2021</p>
+    </footer>
   )
 }

@@ -273,6 +273,21 @@ input[type="file"] {
     padding: 5px;
     margin: 5px 0;
 }
+
+/* footer */
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #b3b3b3;
+}
+
+footer > p {
+  text-align: center;
+  margin: 0;
+}
+
+
 /* Utilities */
 
 .push-left {
