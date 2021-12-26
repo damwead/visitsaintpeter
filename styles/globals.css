@@ -28,6 +28,7 @@ main {
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
 h2 { font-size: 1.25rem; }
+h3 { font-size: 1rem; }
 
 a {
   color: inherit;
@@ -184,8 +185,6 @@ button.btn-logo {
 }
 
 .image-banner {
-  width: 100px !important;
-  height: 50px !important;
   border-radius: 8px;
 }
 
@@ -201,10 +200,10 @@ button.btn-logo {
 }
 
 .premiere-text {
-  width: 400px;
+  width: 500px;
 }
 
-.premiere-text > p {
+.premiere-text-block .premiere-text {
   font-size: 18px;
 }
 
