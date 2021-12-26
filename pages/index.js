@@ -51,7 +51,7 @@ export default function Home() {
           <Image className='image' src='/schelkunch.jpg' width="400" height="562" />
 
           <Link href={"post"}>
-            <h2>Avant Garde</h2>
+            <h2>Щелкунчик</h2>
           </Link>
 
           <p>Проект приурочен к юбилею  Мариуса Петипа и посвящен легендарному «Щелкунчику»  - сказке Э.Гофманна и его многочисленным и многожанровым интерпретациям на протяжении 19-20 веков. </p>
