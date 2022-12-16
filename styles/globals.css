@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --color-bg: #eef0f1;
-  --color-text: #08090a;
+  --color-bg: #d2b4ff;
+  --color-text: #000000;
   --color-blue: #3b49df;
   --color-red: #df3b3b;
   --color-green: #3bdf72;
@@ -16,13 +16,18 @@ body {
   font-family: 'Noto Sans', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
-  margin-top: 50px;
 }
 
 
-
+  /* TODO: media query */
 main {
   padding: 1rem 10vw;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 1700px;
+  border-left: 1px solid currentcolor;
+  border-right: 1px solid currentcolor;
 }
 
 h1 { font-size: 2rem; }
@@ -62,17 +67,14 @@ code {
 }
 
 /* Navbar */
-
+  /* TODO: media query */
 .navbar {
   height: 70px;
   width: 100%;
-  background: white;
-  color: var(--colors-text);
-  position: fixed;
   top: 0;
   padding: 0 10vw;
   font-weight: bold;
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: 1px solid black;
   z-index: 99;
 }
 
@@ -170,33 +172,28 @@ button.btn-logo {
 
 
 /* images */
+  /* TODO: media query */
 .image-banner {
   object-fit: cover;
 }
 
-
 /* premiere */
 .premiere {
-  /* display: block; */
-  background-color: #dedfe0;
-  border: 1px solid #ececec;
-  border-radius: 8px;
 
 }
 
 .image-banner {
-  border-radius: 8px;
+
 }
 
 .premiere-content .image {
-  border-radius: 8px;
+
 }
 
 .premiere-content {
-  padding: 3rem;
+  /* padding: 3rem; */
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .premiere-text {
@@ -208,26 +205,26 @@ button.btn-logo {
 }
 
 
-/* Flex container */
+/* Grid container */
 
-.flex-container {
-  display: flex;
-  justify-content: space-evenly;
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 1fr 500px 1fr; */
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;    
+  /* place-items: center; */
 }
 
-/* .flex-container > div {
-  width: auto;
-} */
 
 /* Cards */
 
 .card {
   padding: 1rem;
   margin: 1rem 0;
-  background-color: rgb(211, 211, 211);
-  border: 1px solid var(--color-gray);
-  border-radius: 8px;
-  width: 420px;
+  border: 1px solid black;
+  border-radius: 7px;
+  width: 420px; 
+  /* TODO: media query */
 }
 
 .card footer {
@@ -235,7 +232,7 @@ button.btn-logo {
 }
 
 .card .image {
-  border-radius: 5px;
+
 }
 
 .card-info {
@@ -274,11 +271,15 @@ input[type="file"] {
 }
 
 /* footer */
-
+  /* TODO: media query */
 footer {
+  width: 1700px;
   margin-top: 2rem;
-  padding: 1rem;
-  background-color: #b3b3b3;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px black;
+  border-right: 5px black;
 }
 
 footer > p {
