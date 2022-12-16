@@ -30,6 +30,21 @@ main {
   border-right: 1px solid currentcolor;
 }
 
+@media screen and (max-width: 1200px){
+  main {
+    width: 800px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto !important;
+  }
+
+  .card {
+    width: 300px !important; 
+  }
+
+}
+
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
 h2 { font-size: 1.25rem; }
@@ -182,37 +197,13 @@ button.btn-logo {
 
 }
 
-.image-banner {
-
-}
-
-.premiere-content .image {
-
-}
-
-.premiere-content {
-  /* padding: 3rem; */
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.premiere-text {
-  width: 500px;
-}
-
-.premiere-text-block .premiere-text {
-  font-size: 18px;
-}
-
 
 /* Grid container */
-
 .grid-container {
+  width: 100%;
   display: grid;
-  /* grid-template-columns: 1fr 500px 1fr; */
   grid-template-columns: auto auto auto;
   justify-content: space-between;    
-  /* place-items: center; */
 }
 
 
