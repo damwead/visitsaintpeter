@@ -25,25 +25,11 @@ main {
 
   margin-left: auto;
   margin-right: auto;
-  width: 1700px;
+  width: 100%;
   border-left: 1px solid currentcolor;
   border-right: 1px solid currentcolor;
 }
 
-@media screen and (max-width: 1200px){
-  main {
-    width: 800px;
-  }
-
-  .grid-container {
-    grid-template-columns: auto auto !important;
-  }
-
-  .card {
-    width: 300px !important; 
-  }
-
-}
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
@@ -202,10 +188,28 @@ button.btn-logo {
 .grid-container {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, auto);
   justify-content: space-between;    
 }
+@media only screen and (max-width: 1820px) {
+  .grid-container {
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+  }
+}
 
+@media only screen and (max-width: 1320px) {
+  .grid-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(1, auto);
+  }
+}
 
 /* Cards */
 
@@ -214,16 +218,13 @@ button.btn-logo {
   margin: 1rem 0;
   border: 1px solid black;
   border-radius: 7px;
-  width: 420px; 
+  max-width: 100%;
+  /* width: 420px;  */
   /* TODO: media query */
 }
 
-.card footer {
-  display: flex;
-}
-
 .card .image {
-
+  width: 100%;
 }
 
 .card-info {
