@@ -7,10 +7,20 @@ export default function Navbar() {
 
   return (
     <nav className='navbar'>
-      <ul>
+      <ul className='menu'>
         <li>
           <Link href="/">
-            <h1 className="h1-logo">КУЛЬТУРНЫЙ МОСТ</h1>
+            <h2 className="h1-logo">КУЛЬТУРНЫЙ МОСТ</h2>
+          </Link>
+        </li>
+        <li>
+        <Link href="/404">
+            <h2 className="h1-logo">Галерея</h2>
+          </Link>
+        </li>
+        <li>
+        <Link href="/404">
+            <h2 className="h1-logo">Партнеры</h2>
           </Link>
         </li>
       </ul>

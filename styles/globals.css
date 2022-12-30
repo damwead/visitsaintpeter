@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --color-bg: #d2b4ff;
-  --color-text: #000000;
+  --color-bg: #201e1a;
+  --color-text: #b5bdc4;
   --color-blue: #3b49df;
   --color-red: #df3b3b;
   --color-green: #3bdf72;
   --color-gray: #b5bdc4;
   --color-white: #ffffff;
+  --color-yellow: #52432d;
 }
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
-  background-color: var(--color-bg);
+  background: linear-gradient(to bottom right, #0d0f12, #32301e);
   color: var(--color-text);
 }
 
@@ -33,7 +34,7 @@ main {
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
-h2 { font-size: 1.25rem; }
+h2 { font-size: 1.25rem; color: var(--color-yellow);}
 h3 { font-size: 1rem; }
 
 a {
@@ -70,12 +71,12 @@ code {
 /* Navbar */
   /* TODO: media query */
 .navbar {
-  height: 70px;
+  height: 30px;
   width: 100%;
   top: 0;
   padding: 0 10vw;
   font-weight: bold;
-  border-bottom: 1px solid black;
+  background-color: black;
   z-index: 99;
 }
 
@@ -189,19 +190,19 @@ button.btn-logo {
   width: 100%;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(1, auto);
   justify-content: space-between;    
 }
 @media only screen and (max-width: 1820px) {
   .grid-container {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
     grid-gap: 1rem;
   }
 }
 
 @media only screen and (max-width: 1320px) {
   .grid-container {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
   }
 }
 
@@ -214,22 +215,28 @@ button.btn-logo {
 /* Cards */
 
 .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
   padding: 1rem;
   margin: 1rem 0;
-  border: 1px solid black;
-  border-radius: 7px;
   max-width: 100%;
   /* width: 420px;  */
   /* TODO: media query */
 }
+.image-block {
+  float: left;
+}
 
 .card .image {
   width: 100%;
+  float: left;
+  margin-right: 10px;
 }
 
-.card-info {
-  color: white;
-  background: var(--color-blue);
+.card-text {
+  float: left;
 }
 
 /* Loader */
