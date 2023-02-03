@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --color-bg: #201e1a;
-  --color-text: #b5bdc4;
+  --color-bg: #f3f3f3;
+  --color-text: #000000;
   --color-blue: #3b49df;
   --color-red: #df3b3b;
   --color-green: #3bdf72;
@@ -15,20 +15,16 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
-  background: linear-gradient(to bottom right, #0d0f12, #32301e);
+  background: var(--color-bg);
   color: var(--color-text);
 }
 
 
   /* TODO: media query */
 main {
-  padding: 1rem 10vw;
-
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  border-left: 1px solid currentcolor;
-  border-right: 1px solid currentcolor;
 }
 
 
@@ -49,24 +45,6 @@ a {
 
 img {max-width: 100%;}
 
-input { 
-  display: inline-block; 
-  outline: none;
-  border: none;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 5px 10px;
-}
-
-fieldset {
-  border: none;
-  padding: 1rem 0;
-  font-size: 1.25rem;
-}
-
-code {
-  overflow-x: scroll;
-}
 
 /* Navbar */
   /* TODO: media query */
@@ -74,9 +52,11 @@ code {
   height: 30px;
   width: 100%;
   top: 0;
-  padding: 0 10vw;
-  font-weight: bold;
-  background-color: black;
+  margin-top: 10px;
+  padding: 0 5vw;
+  color: rgb(215, 215, 215);
+  background-color: transparent; 
+  position: absolute;
   z-index: 99;
 }
 
@@ -90,88 +70,16 @@ code {
   height: 100%;
 }
 
-.navbar img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
 .navbar li {
   border-radius: 50%;
-  
+  flex-grow: 1;
 }
-
-/* Buttons */
-
-.btn, button {
-  background-color: var(--color-gray);
-  border: none;
-  color: var(--color-text);
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bold;
-  border-radius: 0.25rem;
+.navbar p {
+  font-weight: 100;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
-  margin: 0.5rem 1rem 0.5rem 0;
 }
-
-@media only screen and (max-width: 768px) {
-  button {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-  }
-}
-
-
-button:hover {
-  filter: brightness(90%);
-}
-
-button:disabled,
-button[disabled]{
-  filter: brightness(80%);
-  cursor: not-allowed;
-}
-
-button.btn-blue {
-  background-color: var(--color-blue);
-  color: white;
-}
-
-button.btn-red {
-  background-color: var(--color-red);
-  color: white;
-}
-
-button.btn-green {
-  background-color: var(--color-green);
-  color: white;
-}
-
-button.btn-google {
-  background-color: white;
-  color: var(--color-text);
-}
-
-.btn-google img {
-  width: 30px;
-  margin-right: 10px;
-}
-
-button.btn-logo {
-  background-color: var(--color-text);
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-}
-
 
 /* images */
   /* TODO: media query */
@@ -181,7 +89,12 @@ button.btn-logo {
 
 /* premiere */
 .premiere {
+  width: 100%;
+}
 
+.premiere img {
+  width: 100%;
+  height: 1024px;
 }
 
 
@@ -192,24 +105,6 @@ button.btn-logo {
   grid-gap: 2rem;
   grid-template-columns: repeat(1, auto);
   justify-content: space-between;    
-}
-@media only screen and (max-width: 1820px) {
-  .grid-container {
-    grid-template-columns: repeat(1, auto);
-    grid-gap: 1rem;
-  }
-}
-
-@media only screen and (max-width: 1320px) {
-  .grid-container {
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .grid-container {
-    grid-template-columns: repeat(1, auto);
-  }
 }
 
 /* Cards */
@@ -231,6 +126,7 @@ button.btn-logo {
 
 .card .image {
   width: 100%;
+  border-radius: 3px;
   float: left;
   margin-right: 10px;
 }
@@ -239,40 +135,10 @@ button.btn-logo {
   float: left;
 }
 
-/* Loader */
-
-.loader {
-  border: 10px solid var(--color-bg); 
-  border-top: 10px solid var(--color-blue); 
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* File uploads */
-
-input[type="file"] {
-  display: none;
-}
-
-.upload-snippet {
-  width: 75%;
-    margin-left: auto;
-    background: white;
-    padding: 5px;
-    margin: 5px 0;
-}
-
 /* footer */
   /* TODO: media query */
 footer {
-  width: 1700px;
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin-left: auto;
@@ -291,6 +157,10 @@ footer > p {
 
 .push-left {
   margin-left: auto;
+}
+
+.push-right {
+  flex-grow: 5 !important;
 }
 
 .text-sm {

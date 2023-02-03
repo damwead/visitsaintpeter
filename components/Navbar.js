@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useContext } from 'react';
 import { UserContext } from '../lib/context';
 
@@ -8,22 +9,23 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
       <ul className='menu'>
-        <li>
+        <li className='push-right'>
           <Link href="/">
-            <h2 className="h1-logo">КУЛЬТУРНЫЙ МОСТ</h2>
+            <p className="">Культурный Мост</p>
           </Link>
         </li>
         <li>
-        <Link href="/404">
-            <h2 className="h1-logo">Галерея</h2>
+          <Link href="/404">
+            <p className="">Главная</p>
           </Link>
         </li>
         <li>
-        <Link href="/404">
-            <h2 className="h1-logo">Партнеры</h2>
+          <Link href="/404">
+            <p className="">Галерея</p>
           </Link>
         </li>
       </ul>
+
     </nav>
   )
 }
