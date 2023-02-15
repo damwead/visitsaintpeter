@@ -127,6 +127,12 @@ img {max-width: 100%;}
   /* TODO: media query */
 }
 
+@media only screen and (max-width: 650px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
 .image-block {
   float: left;
 }
@@ -145,6 +151,7 @@ img {max-width: 100%;}
 
 .card-text {
   float: left;
+  width: fit-content;
 }
 
 /* footer */
