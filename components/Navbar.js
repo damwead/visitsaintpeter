@@ -10,17 +10,17 @@ export default function Navbar() {
     <nav className='navbar'>
       <ul className='menu'>
         <li className='push-right'>
-          <Link href="/">
+          <Link href="/" passHref>
             <p className="">Культурный Мост</p>
           </Link>
         </li>
         <li>
-          <Link href="/404">
+          <Link href="/404" passHref>
             <p className="">Главная</p>
           </Link>
         </li>
         <li>
-          <Link href="/404">
+          <Link href="/404" passHref>
             <p className="">Галерея</p>
           </Link>
         </li>

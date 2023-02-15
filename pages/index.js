@@ -9,18 +9,18 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <div className='premiere'>
-        <Image className='image-banner' src='/chestnutman.jpeg' width="1800px" height="1024" />
+        <Image className='image-banner' src='/chestnutman.jpeg' width="1800px" height="1024" alt="Постер"/>
       </div>
 
       <div className='grid-container'>
 
         <div className='card'>
           <div className='image-block'>
-            <Image className='image' src='/overview.jpeg' width="400" height="562" />
+            <Image className='image' src='/overview.jpeg' width="400" height="562" alt="Постер"/>
           </div>
           <div className='card-text'>
-            <Link href={"post"}>
-              <h2>Фестиваль "Культурный мост"</h2>
+            <Link href={"post"} passHref>
+              <h2>Фестиваль &rdquo;Культурный мост&rdquo;</h2>
             </Link>
 
             <p>
@@ -42,11 +42,11 @@ export default function Home() {
 
         <div className='card'>
           <div className='image-block'>
-            <Image className='image' src='/we_and_russia.jpeg' width="400" height="562" />
+            <Image className='image' src='/we_and_russia.jpeg' width="400" height="562" alt="Постер"/>
           </div>
           <div className='card-text'>
-            <Link href={"post"}>
-              <h2>Фестиваль "Я, ты, мы -Россия!"</h2>
+            <Link href={"post"} passHref>
+              <h2>Фестиваль &rdquo;Я, ты, мы -Россия!&rdquo;</h2>
             </Link>
 
             <p>
@@ -73,10 +73,10 @@ export default function Home() {
 
         <div className='card'>
           <div className='image-block'>
-            <Image className='image' src='/ostrovskiy.jpeg' width="400" height="562" />
+            <Image className='image' src='/ostrovskiy.jpeg' width="400" height="562" alt="Постер"/>
           </div>
           <div className='card-text'>
-            <Link href={"post"}>
+            <Link href={"post"} passHref>
               <h2>Спектакль «Последняя жертва» по пьесе А.Островского</h2>
             </Link>
 
