@@ -31,11 +31,12 @@ export default function Home() {
           </div>
         </div>
 
-
+        <hr></hr>
 
         <div className='card'>
-          <Image className='image' src='/ostrovskiy.jpeg' width="400" height="562" />
-
+          <div className='image-block'>
+            <Image className='image' src='/ostrovskiy.jpeg' width="400" height="562" />
+          </div>
           <div className='card-text'>
             <Link href={"post"}>
               <h2>Спектакль «Последняя жертва» по пьесе А.Островского</h2>
@@ -48,6 +49,26 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <hr></hr>
+
+        <div className='card'>
+          <div className='image-block'>
+            <Image className='image' src='/ostrovskiy.jpeg' width="400" height="562" />
+          </div>
+          <div className='card-text'>
+            <Link href={"post"}>
+              <h2>Спектакль «Последняя жертва» по пьесе А.Островского</h2>
+            </Link>
+
+            <p>
+              Спектакль о любви и деньгах под музыку Бизе. Молодые актеры Санкт-Петербургского
+              государственного института культуры МАСТЕРСКАЯ З.А.РСФСР М.И.САМОЧКО Хронометраж 2.5 ч с
+              антрактом
+            </p>
+          </div>
+        </div>
+        
       </div>
     </main>
   );

@@ -30,7 +30,7 @@ main {
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
-h2 { font-size: 1.25rem; color: var(--color-yellow);}
+h2 { font-size: 1.25rem;}
 h3 { font-size: 1rem; }
 
 a {
@@ -41,6 +41,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+hr {
+  border-top: 1px solid rgb(0, 0, 0);
+  width: inherit;
 }
 
 img {max-width: 100%;}
@@ -101,6 +106,7 @@ img {max-width: 100%;}
 /* Grid container */
 .grid-container {
   width: 100%;
+  padding: 0 10vw;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(1, auto);
@@ -114,12 +120,13 @@ img {max-width: 100%;}
   flex-direction: row;
   justify-content: flex-start;
   gap: 30px;
-  padding: 1rem;
-  margin: 1rem 0;
+  padding: 0;
+  margin: 4rem 0;
   max-width: 100%;
   /* width: 420px;  */
   /* TODO: media query */
 }
+
 .image-block {
   float: left;
 }
@@ -129,6 +136,11 @@ img {max-width: 100%;}
   border-radius: 3px;
   float: left;
   margin-right: 10px;
+}
+
+.card h2 {
+  margin: 0;
+  margin-bottom: 3vw;
 }
 
 .card-text {
