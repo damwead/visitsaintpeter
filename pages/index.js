@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <div className='premiere'>
-        <Image className='image-banner' src='/chestnutman.jpeg' width="1800px" height="1024" alt="Постер"/>
+        <Image className='image-banner' src='/chestnutman.jpeg' width="1800" height="1024" alt="Постер"/>
       </div>
 
       <div className='grid-container'>
