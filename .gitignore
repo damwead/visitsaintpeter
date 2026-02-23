@@ -1,4 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/lib/firebase.js
+/lib/context.js
+/lib/context.js
 
 # dependencies
 /node_modules

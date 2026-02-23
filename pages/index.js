@@ -3,8 +3,6 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const premier = null; // firestore.collection('posts').doc(premier) == true/false
-
 export default function Home() {
   return (
     <main className={styles.container}>
